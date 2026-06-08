@@ -14,6 +14,7 @@ o sistema é utilizado para uma automação maior da loja fisica, a onde a pesso
 + Natanael do Nascimento Souza
 + Nycolas Arruda de Lima
 + Matheus Abrão Czopko
++ Gabriel Regi Jacinto Almeida
 
 <h2>Principais Funcionalidades: </h2>
 <h3> O programa foi feito utilizando a linguaguem de programação Java, no qual utilizamos de POO (Programação orientada a objeto), utilizando de classes, objetos, atributos e métodos
