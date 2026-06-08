@@ -63,5 +63,9 @@ O sistema é composto por 4 partes principais que trabalham juntas:1. Classe Fil
 
 </h3>
 
+<h2>Como utilizar o programa?</h2>
+
+<h3>Para a utilização de nosso sistema é simples, quando o iniciar ira aparecer a opção de fazer login caso você ja tenha uma conta, se não, tera a opção de criar sua conta e dentro você ira poder escolher se um client vip ou não, apos isso, basta escolher se quer alugar um filme ou jogo, e escolher o que quer, simples, facil e intuitivo de ser utilizado.</h3>
+
 
 
