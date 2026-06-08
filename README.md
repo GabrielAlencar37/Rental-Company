@@ -46,78 +46,22 @@ o sistema é utilizado para uma automação maior da loja fisica, a onde a pesso
 + Consulta de dados
 
 
-<h2>Codigo:</h2>
 
-     class Filme{
-         String title;
-         String producer;
-         double cost;
-         int noOfFilme;
+<h2>Como Funciona?</h2>
+<h3>O código funciona como uma tela de login (validação de acesso). Após o login bem-sucedido, a classe principal (main) fica liberada para gerenciar as outras funcionalidades do sistema, tais como:
 
-     public Filme (String title, String producer, double cost, int noOFilme){
-        this.title = title;
-        this.producer = producer;
-        this.cost = cost;
-        this.noOfFilme = noOfFilme;
-    }
+Criar objetos de filmes;
+Consultar estoque e disponibilidade;
+Aplicar 20% de desconto para ClienteVip;
+Realizar locações.
 
-    public void displayFilmeInfo(){
-        System.out.println("Titulo: " + title);
-        System.out.println("Autor: " + producer);
-        System.out.println("Preço: " + cost);
-        System.out.println("Filmes Disponiveis: " + noOfFilme);
-    }
+Em suma: é o ponto de partida que valida o usuário para liberar o uso do sistema de locação.
 
-    public boolean checkDispCost(int requestedCopies){
-        if(requestedCopies <= noOfFilme){
-            double totalCost = requestedCopies * cost;
-            System.out.println("Custo total para" + requestedCopies + "copias" totalCost);
-            return true;
-        }else{
-            System.out,println("Descupe, Filme já alugado");
-            return false;
-             }
-         }
-     }
-<h3>Aqui temos um exemplo de poo, a onde criamos a classe dos filmes a onde damos seus "atributos", sendo eles Titulo, autor, preço e se ele esta disponivel ou não</h3>
+--------------------------------------------------------------------------------------------------
 
---------------------------------------------------
+O sistema é composto por 4 partes principais que trabalham juntas:1. Classe FilmeÉ a receita que define o que é um filme no sistema.Atributos (Dados): Guarda o título, o diretor/autor, o preço base de locação e a quantidade de cópias disponíveis em estoque.displayFilmeInfo(): Método que imprime na tela todas as informações do filme.checkDispCost(): O motor financeiro do filme. Ele verifica se há estoque suficiente para o pedido. Se houver, calcula o preço total e aplica o desconto se o cliente for VIP.2. Classe JogoSimilar à classe Filme, mas adaptada para o universo dos games.Atributos (Dados): Guarda o título do game, a plataforma (ex: PS5, Xbox), o preço e o estoque.checkDispCostJogo(): Realiza a mesma validação financeira do filme, garantindo que as regras de negócio (estoque e desconto VIP) funcionem perfeitamente para mídias de videogame.3. Classe ClienteVipGerencia as informações de quem está alugando.Atributos (Dados): Guarda o nome do cliente, o ID de identificação e um indicador lógico (true/false) que diz se ele tem direito a benefícios VIP.Regra de Negócio: Se o cliente for VIP, o sistema deduz automaticamente 20% do valor total no momento do cálculo do aluguel.4. Classe rental_company (A Executora)É o cérebro do programa. Contém o método main, que dá a partida no sistema, cria os objetos de teste (filmes, jogos, clientes) e gerencia a interação com o usuário final via teclado.
 
-     ublic class rental_company{
-    public static void main(String[] args) {
-        Movie movie1 = new Movie ("exemplo de filme 1"," exemplo de diretor 1", 25, 20 );
-        Movie movie2 = new Movie ("exemplo de filme 2"," exemplo de diretor 2", 25, 20);
-        Movie movie3 = new Movie ("exemplo de filme 3"," exemplo de diretor 3", 25, 20);
+</h3>
 
-        System.out.println("Detalhes do filme 1");
-        movie1.displayFilmeInfo();
-        System.out.println("Detalhes do filme 2");
-        movie2.displayFilmeInfo();
-        System.out.println("Detalhes do filme 3");
-        movie3.displayFilmeInfo();
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite o número do filme que você deseja: ");
-        String requestTitle = scanner.nextLine();
-        System.out.println("Digite o tempo de locação que voçê deseja: ");
-        int requestedCopies = scanner.nextInt();
-
-        boolean movieFound = false;
-        if(requestedTitle.equalsIgnoreCase(movie1.title)){
-            movieFound = movie1.checkDispCost(requestedCopies);
-        }else if(requestedTitle.equalsIgnoreCase(movie2.title)){
-            movieFound = movie2.checkDispCost(requestedCopies);
-        }else if(requestedTitle.equalsIgnoreCase(movie3.title)){
-            movieFound = movie3.checkDispCost(requestedCopies);
-        }
-        
-        if(!movieFound){
-            System.out.println("Filme não encontrado");
-        }
-        scanner.close();
-         }
-     }
-<h3>Nesta parte do codigo, ira aprensentar a lista de filmes, se tem o filme desejado no catalogo, ou se ele  esta dispinivel ou não.</h3>
-     
 
 
