@@ -108,7 +108,7 @@ public class a3 {
         String nomeCadastrado1 = "Usuário Teste";
         boolean vipCadastrado1 = true;
 
-        // CONTA 2: Variáveis vazias preparadas para receber um NOVO cadastro
+        // CONTA 2: Variáveis vazias preparadas para receber um novo cadastro
         String emailCadastrado2 = "";
         String senhaCadastrada2 = "";
         String nomeCadastrado2 = "";
@@ -203,7 +203,7 @@ public class a3 {
         clienteLogado.exibirCliente();
         System.out.println("============================\n");
 
-        // Objetos de teste criados de forma simples
+        // Catálogo de Filmes
         Filme filme1 = new Filme("Matrix", "Wachowskis", 25.0, 20);
         Filme filme2 = new Filme("Interestelar", "Christopher Nolan", 30.0, 10);
         Jogo jogo1 = new Jogo("GTA V", "PS5", 40.0, 5);
