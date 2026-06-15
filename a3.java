@@ -115,7 +115,7 @@ public class a3 {
         boolean vipCadastrado2 = false;
         boolean temSegundoUsuario = false; // Controla se alguém se cadastrou
 
-        System.out.println("=== SISTEMA DE BOAS-VINDAS ===");
+        System.out.println(" SISTEMA DE BOAS-VINDAS ");
         System.out.println("1 - Fazer Login (Para quem já tem cadastro)");
         System.out.println("2 - Criar Novo Cadastro (Para quem é novo)");
         System.out.print("Escolha uma opção: ");
@@ -124,17 +124,17 @@ public class a3 {
 
         // --- TELA DE CADASTRO ---
         if (opcaoMenu == 2) {
-            System.out.println("\n--- TELA DE CADASTRO ---");
-            System.out.print("Digite seu nome completo: ");
+            System.out.println(" TELA DE CADASTRO ");
+            System.out.print(" Digite seu nome completo: ");
             nomeCadastrado2 = teclado.nextLine();
 
-            System.out.print("Digite seu novo e-mail: ");
+            System.out.print(" Digite seu novo e-mail: ");
             emailCadastrado2 = teclado.nextLine();
 
-            System.out.print("Digite sua nova senha: ");
+            System.out.print(" Digite sua nova senha: ");
             senhaCadastrada2 = teclado.nextLine();
 
-            System.out.print("Você deseja ser um Cliente VIP? (S/N): ");
+            System.out.print(" Você deseja ser um Cliente VIP? (S/N): ");
             String respostaVip = teclado.nextLine();
             
             if (respostaVip.equalsIgnoreCase("S")) {
@@ -145,17 +145,17 @@ public class a3 {
 
             // Validação simples de campos vazios
             if (emailCadastrado2.isEmpty() || senhaCadastrada2.isEmpty() || nomeCadastrado2.isEmpty()) {
-                System.out.println("Erro: Os campos de cadastro não podem ser vazios.");
+                System.out.println(" Erro: Os campos de cadastro não podem ser vazios.");
                 teclado.close();
                 return;
             }
 
             temSegundoUsuario = true; // Ativa a existência da segunda conta
-            System.out.println("\n✔ Cadastro realizado com sucesso! Prossiga para o login.");
+            System.out.println(" Cadastro realizado com sucesso! Prossiga para o login.");
         }
 
         // --- TELA DE LOGIN UNIFICADA ---
-        System.out.println("\n--- TELA DE LOGIN ---");
+        System.out.println(" TELA DE LOGIN ");
         System.out.print("Digite seu email: ");
         String emailDigitado = teclado.nextLine();
 
