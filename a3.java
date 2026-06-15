@@ -115,7 +115,7 @@ public class a3 {
         boolean vipCadastrado2 = false;
         boolean temSegundoUsuario = false; // Controla se alguém se cadastrou
 
-        System.out.println(" SISTEMA DE BOAS-VINDAS ");
+        System.out.println(" === BOAS-VINDAS === ");
         System.out.println("1 - Fazer Login (Para quem já tem cadastro)");
         System.out.println("2 - Criar Novo Cadastro (Para quem é novo)");
         System.out.print("Escolha uma opção: ");
@@ -124,7 +124,7 @@ public class a3 {
 
         // --- TELA DE CADASTRO ---
         if (opcaoMenu == 2) {
-            System.out.println(" TELA DE CADASTRO ");
+            System.out.println("\n--- TELA DE CADASTRO --- ");
             System.out.print(" Digite seu nome completo: ");
             nomeCadastrado2 = teclado.nextLine();
 
@@ -151,11 +151,11 @@ public class a3 {
             }
 
             temSegundoUsuario = true; // Ativa a existência da segunda conta
-            System.out.println(" Cadastro realizado com sucesso! Prossiga para o login.");
+            System.out.println("\n✔ Cadastro realizado com sucesso! Prossiga para o login.");
         }
 
         // --- TELA DE LOGIN UNIFICADA ---
-        System.out.println(" TELA DE LOGIN ");
+        System.out.println("\n--- TELA DE LOGIN --- ");
         System.out.print("Digite seu email: ");
         String emailDigitado = teclado.nextLine();
 
