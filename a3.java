@@ -97,7 +97,7 @@ class Jogo {
     }
 }
 
-// CLASSE PRINCIPAL ACADÊMICA (NÍVEL INICIANTE)
+// CLASSE PRINCIPAL 
 public class a3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
@@ -171,7 +171,7 @@ public class a3 {
         ClienteVip clienteLogado = null;
         boolean loginSucesso = false;
 
-        // Validação usando ifs encadeados bem tradicionais
+        // Validação usando ifs encadeados
         if (emailDigitado.equals(emailCadastrado1) && senhaDigitada.equals(senhaCadastrada1)) {
             System.out.println("Sucesso: Home");
             clienteLogado = new ClienteVip(nomeCadastrado1, "USER-001", vipCadastrado1);
@@ -221,7 +221,7 @@ public class a3 {
 
         boolean itemEncontrado = false;
 
-        // Estrutura de busca baseada puramente nos ifs que você enviou no início
+        // Estrutura de busca utilizando ifs
         if (tipoItem.equalsIgnoreCase("filme")) {
             System.out.println("Digite o título do filme: ");
             String requestTitle = teclado.nextLine();
