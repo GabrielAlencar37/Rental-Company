@@ -68,6 +68,10 @@ O sistema é composto por 4 partes principais que trabalham juntas:1. Classe Fil
 
 <h3>Para a utilização de nosso sistema é simples, quando o iniciar ira aparecer a opção de fazer login caso você ja tenha uma conta, se não, tera a opção de criar sua conta e dentro você ira poder escolher se um client vip ou não, apos isso, basta escolher se quer alugar um filme ou jogo, e escolher o que quer, simples, facil e intuitivo de ser utilizado.</h3>
 
+<h2>Para instalar:</h2>
+
+<h3>Para instalar o programa é simples, baixe o arquivo e execute ele dentro de um espaço que leia java (IDE) e rode o codigo</h3>
+
 
 <h2>Link Slide:</h2>
 https://docs.google.com/presentation/d/1SICZWk5YTFHTTHw5Eb-YG5MxepNgEFGifTbdzSE5Ex0/edit?usp=sharing
